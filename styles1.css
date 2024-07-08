@@ -208,7 +208,29 @@ color: #fff;
 font-size: 20px;
 margin: 2em 0 3em;
 }
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        padding: 8% 8%; /* Adjust padding for better spacing */
+        gap: 3em; /* Reduce gap between elements */
+    }
 
+    .about-img,
+    .about-content {
+        text-align: center; /* Center-align both image and content */
+        flex: auto; /* Let both image and content take full width */
+    }
+
+    .about-img img {
+        width: 70%; /* Adjust image width for better proportion on mobile */
+        max-width: 100%;
+        height: auto;
+    }
+
+    .about-content h2 {
+        font-size: 36px; /* Adjust heading size for better readability */
+    }
+}
 .footer {
     position: relative;
     bottom: 0;
