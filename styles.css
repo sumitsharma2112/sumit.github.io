@@ -165,7 +165,7 @@ span{
 .home-img img {
     width: 25vw;
     animation: floatImage 4s ease-in-out infinite;
-    border-radius: 50%; /* Makes the image circular */
+    border-radius: 0%; /* Makes the image circular */
     position: relative;
     top: -20px; /* Adjust the value to move the image upwards */
 }
