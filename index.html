@@ -57,8 +57,24 @@ menuIcon.addEventListener('click', () => {
             <a href="https://www.instagram.com/_sam_00015/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://www.linkedin.com/in/sumit-sharma-4b8614283/"><i class="fa-brands fa-linkedin"></i></a>
         </div>
-        <a href="img/aboutpic.png" class="btn" download="CV.png">Download CV</a>
+<!--         <a href="img/aboutpic.png" class="btn" download="CV.png">Download CV</a> -->
+         <a href="img/aboutpic.jpg" class="btn" id="open-cv">OPEN CV</a>
     </div>
+    <script> 
+        document.addEventListener('DOMContentLoaded', function() {
+    var openCvBtn = document.getElementById('open-cv');
+
+    openCvBtn.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default behavior of following the link
+        var imageUrl = this.getAttribute('href');
+        openImageInNewTab(imageUrl);
+    });
+
+    function openImageInNewTab(url) {
+        window.open(url, '_blank');
+    }
+});
+    </script>
     <!-- <div>
         <a href="img/aboutpic.png" class="btn" download="CV.png">Download CV</a>
     </div> -->
