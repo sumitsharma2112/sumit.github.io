@@ -85,6 +85,37 @@ span{
     font-size: 62px;
     line-height: 1.2;
 }
+@media (max-width: 768px) {
+    .home {
+        padding: 30px 5%; /* Adjust padding for smaller screens */
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: center; /* Center align items vertically */
+        gap: 2em; /* Reduced gap between elements */
+    }
+
+    .home-content {
+        text-align: center; /* Center-align text content on smaller screens */
+        margin-top: 1em; /* Adjust margin space between image and text */
+    }
+
+    .home-content h3 {
+        font-size: 32px; /* Decrease font size for smaller screens */
+    }
+
+    .home-content h1 {
+        font-size: 48px; /* Decrease font size for smaller screens */
+    }
+
+    .img-box {
+        order: -1; /* Move image above text */
+    }
+
+    .img-box img {
+        width: 50%; /* Adjust image width for smaller screens */
+        max-width: 300px; /* Limit maximum image width */
+        margin-bottom: 1em; /* Optional: Add space below the image */
+    }
+}
 .home-content p {
     font-size: 18px;
     margin: 25px 0 30px;
