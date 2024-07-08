@@ -217,6 +217,13 @@ span{
     /* letter-spacing: 1rem; */
     font-weight: 600;
     transition: .5s ease;
+    margin-right: 3rem;
+}
+@media (max-width: 768px) {
+    .btn {
+        margin-right: 0; /* Remove margin on smaller screens if needed */
+        margin-bottom: 1rem; /* Add margin bottom for better stacking */
+    }
 }
 
 .btn:hover {
